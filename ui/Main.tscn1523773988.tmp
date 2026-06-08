@@ -1,0 +1,301 @@
+[gd_scene format=3 uid="uid://bpmrbvaq8p5ws"]
+
+[ext_resource type="Script" uid="uid://wptoe67e7vhx" path="res://scripts/ui/v_box_container.gd" id="1_3ydky"]
+[ext_resource type="PackedScene" uid="uid://bqgf1de1eaht" path="res://ui/AudioSliders.tscn" id="3_r4ypb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wa6so"]
+bg_color = Color(0.7879494, 0.48278427, 0.6951937, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y1l72"]
+bg_color = Color(0.5764706, 0.56078434, 0.8509804, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t2vec"]
+bg_color = Color(0.98597115, 0.8163442, 0.9199097, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_32dmw"]
+bg_color = Color(0.6488896, 0.32066318, 0.35782957, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+corner_detail = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vds1r"]
+bg_color = Color(0.5764706, 0.56078434, 0.8509804, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sx1v2"]
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3ydky"]
+bg_color = Color(0.92757505, 0.39513737, 0.52627945, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i1r05"]
+bg_color = Color(0.5764706, 0.56078434, 0.8509804, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_enpfv"]
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r4ypb"]
+bg_color = Color(0.8352941, 0.45882353, 0.08627451, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bydl8"]
+bg_color = Color(0.5775011, 0.5612006, 0.8498316, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d1rkh"]
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="Control" type="Control" unique_id=529048760]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=1081623565]
+layout_mode = 0
+offset_left = 669.0
+offset_top = 614.0
+offset_right = 1141.0
+offset_bottom = 637.0
+text = "VERSION 1.0.0 - G5 Gaming and BlueHeart Interactive Studios"
+
+[node name="Label2" type="Label" parent="." unique_id=876565388]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 49.0
+offset_right = 681.0
+offset_bottom = 137.0
+theme_override_font_sizes/font_size = 64
+text = "Project G5 Platform"
+
+[node name="Label3" type="Label" parent="." unique_id=306874007]
+layout_mode = 0
+offset_left = 76.0
+offset_right = 681.0
+offset_bottom = 88.0
+theme_override_font_sizes/font_size = 64
+text = "OPTIONS"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1835213942]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 76.0
+offset_top = 263.0
+offset_right = -689.0
+offset_bottom = -160.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+script = ExtResource("1_3ydky")
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=289011366]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_wa6so")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_y1l72")
+theme_override_styles/hover = SubResource("StyleBoxFlat_t2vec")
+text = "START"
+
+[node name="Load" type="Button" parent="VBoxContainer" unique_id=1142758855]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_32dmw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_vds1r")
+theme_override_styles/hover = SubResource("StyleBoxFlat_sx1v2")
+text = "LOAD"
+
+[node name="Options" type="Button" parent="VBoxContainer" unique_id=1599734237]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_3ydky")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_i1r05")
+theme_override_styles/hover = SubResource("StyleBoxFlat_enpfv")
+text = "OPTIONS"
+
+[node name="Exit" type="Button" parent="VBoxContainer" unique_id=2113164558]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_r4ypb")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_bydl8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_d1rkh")
+text = "QUIT"
+
+[node name="SFX" type="AudioStreamPlayer2D" parent="." unique_id=806637485]
+bus = &"SoundEffects"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=195653617]
+volume_db = 1.0
+autoplay = true
+bus = &"Music"
+
+[node name="OptionsPanel" type="Panel" parent="." unique_id=766041407]
+layout_mode = 0
+offset_left = 232.0
+offset_top = 88.0
+offset_right = 973.0
+offset_bottom = 614.0
+
+[node name="CloseOptionsBtn" type="Button" parent="OptionsPanel" unique_id=84956293]
+layout_mode = 0
+offset_left = 603.0
+offset_top = 17.0
+offset_right = 723.0
+offset_bottom = 65.0
+theme_override_font_sizes/font_size = 24
+text = "CLOSE
+"
+
+[node name="Label" type="Label" parent="OptionsPanel" unique_id=1634395130]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 155.0
+offset_right = 130.0
+offset_bottom = 200.0
+theme_override_font_sizes/font_size = 32
+text = "Audio"
+
+[node name="Label2" type="Label" parent="OptionsPanel" unique_id=18425401]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 231.0
+offset_right = 250.0
+offset_bottom = 276.0
+theme_override_font_sizes/font_size = 32
+text = "Sound Effects"
+
+[node name="Label4" type="Label" parent="OptionsPanel" unique_id=1486777305]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 323.0
+offset_right = 250.0
+offset_bottom = 368.0
+theme_override_font_sizes/font_size = 32
+text = "Control Type"
+
+[node name="SFXSlider" parent="OptionsPanel" unique_id=1226567259 instance=ExtResource("3_r4ypb")]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 291.0
+offset_right = 665.0
+offset_bottom = 307.0
+bus_name = "SoundEffects"
+
+[node name="MusicSlider" parent="OptionsPanel" unique_id=2440162 instance=ExtResource("3_r4ypb")]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 214.0
+offset_right = 665.0
+offset_bottom = 230.0
+bus_name = "Music"
+
+[node name="Label3" type="Label" parent="OptionsPanel" unique_id=1653266613]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 81.0
+offset_right = 149.0
+offset_bottom = 126.0
+theme_override_font_sizes/font_size = 32
+text = "Master"
+
+[node name="MusicSlider2" parent="OptionsPanel" unique_id=1074172773 instance=ExtResource("3_r4ypb")]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 139.0
+offset_right = 665.0
+offset_bottom = 155.0
+bus_name = "Master"
+
+[node name="Button" type="Button" parent="OptionsPanel" unique_id=980026100]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 383.0
+offset_right = 197.0
+offset_bottom = 431.0
+text = "KEYBOARD AND
+MOUSE"
+
+[node name="Button2" type="Button" parent="OptionsPanel" unique_id=653060145]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 383.0
+offset_right = 349.0
+offset_bottom = 439.0
+text = "GAMEPAD"
+
+[node name="Button3" type="Button" parent="OptionsPanel" unique_id=803113352]
+layout_mode = 0
+offset_left = 368.0
+offset_top = 383.0
+offset_right = 501.0
+offset_bottom = 439.0
+text = "TOUCH"
+
+[node name="Button4" type="Button" parent="OptionsPanel" unique_id=856350853]
+layout_mode = 0
+offset_left = 520.0
+offset_top = 383.0
+offset_right = 653.0
+offset_bottom = 439.0
+text = "AUTO-SWITCH"
+
+[node name="CheckButton" type="CheckButton" parent="OptionsPanel" unique_id=1709704738]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 458.0
+offset_right = 310.0
+offset_bottom = 500.0
+theme_override_font_sizes/font_size = 24
+text = " SET FULLSCREEN"
+script = ExtResource("1_3ydky")
+
+[connection signal="pressed" from="VBoxContainer/Start" to="VBoxContainer" method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Start" to="VBoxContainer" method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Load" to="VBoxContainer" method="_on_load_pressed"]
+[connection signal="pressed" from="VBoxContainer/Options" to="VBoxContainer" method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Exit" to="VBoxContainer" method="_on_exit_pressed"]
+[connection signal="pressed" from="OptionsPanel/CloseOptionsBtn" to="VBoxContainer" method="_on_close_options_btn_pressed"]
+[connection signal="toggled" from="OptionsPanel/CheckButton" to="VBoxContainer" method="_on_check_button_toggled"]

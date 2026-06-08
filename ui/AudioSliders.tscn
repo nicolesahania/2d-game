@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bqgf1de1eaht"]
+
+[ext_resource type="Script" uid="uid://dx0a8ynh44lww" path="res://scripts/ui/audio_sliders.gd" id="1_g4vwy"]
+
+[node name="HSlider" type="HSlider" unique_id=1226567259]
+offset_right = 8.0
+offset_bottom = 16.0
+max_value = 1.0
+step = 0.001
+script = ExtResource("1_g4vwy")
